@@ -1,0 +1,145 @@
+/* Resetting default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling with Animated Gradient Background */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+.bg_dark {
+    background: linear-gradient(120deg, #8EC5FC, #E0C3FC, #667eea);
+    background-size: 300% 300%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+    animation: gradientAnimation 8s ease infinite;
+}
+
+/* Background Gradient Animation */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Card Styling with Frosted Glass Effect */
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Smooth Entrance Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Header Text Styling */
+.card-header h1 {
+    font-size: 32px;
+    color: #e24646;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Form and Label Styling */
+.form-group {
+    margin-bottom: 25px;
+}
+
+label {
+    font-weight: 600;
+    color: #7b548e;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 8px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Input and Select Styling with Enhanced Frosted Effect */
+.selectpicker,
+.form-control {
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    box-shadow: inset 0 4px 8px rgba(255, 255, 255, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    backdrop-filter: blur(8px);
+}
+
+.selectpicker:focus,
+.form-control:focus {
+    box-shadow: 0 4px 15px rgba(0, 205, 255, 0.5);
+    outline: none;
+    transform: scale(1.02);
+}
+
+/* Button Styling with Pulsating Neon Effect */
+button.btn-primary {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.6);
+    cursor: pointer;
+    animation: pulse 1.5s infinite;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+button.btn-primary:hover {
+    box-shadow: 0 12px 25px rgba(102, 126, 234, 0.8);
+    transform: translateY(-2px);
+}
+
+/* Pulsating Effect for Button */
+@keyframes pulse {
+    0% { box-shadow: 0 0 20px rgba(102, 126, 234, 0.6); }
+    50% { box-shadow: 0 0 35px rgba(102, 126, 234, 0.8); }
+    100% { box-shadow: 0 0 20px rgba(102, 126, 234, 0.6); }
+}
+
+/* Prediction Text Styling with Glow */
+#prediction {
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 20px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.3), 0 0 8px rgba(102, 126, 234, 0.6);
+}
+
+/* Additional Button Click Animation */
+button.btn-primary:active {
+    transform: scale(0.98);
+    box-shadow: 0 4px 10px rgba(102, 126, 234, 0.4);
+}
+.side-image {
+    /* max-width: 300px; */
+    
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    width: 800px;
+    height: 500px;
+    margin-right:120px;
+}
